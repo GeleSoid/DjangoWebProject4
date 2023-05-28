@@ -1,0 +1,408 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(https://img.freepik.com/premium-photo/marble-table-top-blurred-living-room-background_67155-637.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.element__ing-container ing {
+    height: 1000px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.element-text {
+    text-align: center;
+}
+
+.content {
+    width: 270px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #3f51b5;
+}
+
+.imgblock span {
+    background: #222;
+    color: #fff;
+    border-radius: 0;
+    position: inherit;
+    right: -148px;
+    bottom: 25px;
+    font-size: 19px;
+    padding: 2px 5px;
+    background-color: black;
+}
+
+.imgblock {
+    display: inline-block;
+}
+
+    .imgblock img {
+        height: 160px;
+        width: 250px;
+    }
+
+form {
+    position: relative;
+
+    margin: 0 auto;
+    background: #c4f0fd;
+}
+
+.form2 {
+    position: inherit;
+    width: 300px;
+    margin: 0 auto;
+    background: #c4f0fd;
+}
+
+
+.input, button {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+input, button {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+input {
+
+    padding-left: 0;
+}
+
+button {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+    button:before {
+        font-family: FontAwesome;
+        font-size: 20px;
+        color: #be290e;
+    }
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.4;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    font-family: arial;
+    background: #eee;
+    min-height: 100%;
+}
+
+.app-header {
+    display: block;
+    background: #3f51b5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.header-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.app-toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 8px;
+    pointer-events: 0;
+    font-size: 20px;
+}
+
+#large-toolbar {
+    position: 0;
+    bottom: 0;
+    transform-origin: left top;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+.small-title,
+.large-title {
+    transform-origin: left top;
+    white-space: nowrap;
+    flex: 1;
+    flex-basis: 0.000000001px;
+    overflow: hidden;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+}
+
+.small-title {
+    text-align: right;
+    margin-left: 320px;
+}
+
+.large-title {
+    will-change: transform, opacity;
+    font-size: 56px;
+    font-size: 2em;
+    margin-left: 32px;
+}
+
+.icon-button {
+    display: inline-block;
+    position: relative;
+    padding: 6px;
+    outline: none;
+    user-select: none;
+    font-size: 0;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box !important;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle;
+    fill: currentcolor;
+    stroke: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+.background-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.background {
+    pointer-events: none;
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    will-change: transform, opacity;
+}
+
+#background-back {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/mountain-02.jpg);
+    background-position: left center;
+    opacity: 0;
+    // visibility: hidden;
+}
+
+#background-front {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/mountain-01.jpg);
+    background-position: left center;
+}
+
+.card {
+    padding: 16px;
+    margin: 24px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: rgba(0,0,0,0.87);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-title {
+    padding: 24px 16px 8px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.010em;
+    line-height: 1.6em;
+}
+
+.search {
+    margin: 0 auto;
+}
+
+
+.btn {
+    line-height: 40px;
+    height: auto;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    background-color: #66A182;
+    margin-left: 20px;
+}
+
+li::marker {
+    content: '';
+
+}
+
+li.last{
+
+    margin-left: 20px;
+}
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.dws {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.butt {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #218294;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    display: block;
+    text-align: center;
+    line-height: 55px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+}
+
+    .butt::before,
+    .butt::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #66a182;
+        top: 0;
+        left: -100%;
+        opacity: .5;
+        transition: .3s;
+        z-index: -1;
+        border-radius: 20px;
+    }
+
+    .butt::after {
+        opacity: 1;
+        transition-delay: .2s;
+        border-radius: 20px;
+    }
+
+    .butt:hover {
+        color: #fff;
+    }
+
+        .butt:hover::before,
+        .butt:hover::after {
+            left: 0;
+        }
+
+
+.pulse {
+    background-color: aqua;
+    border-radius: 50%;
+    animation: pulse 0.7s ease-out;
+    transform: scale(0);
+    position: absolute;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(2);
+        background-color: #fff;
+        opacity: 0;
+    }
+}
+

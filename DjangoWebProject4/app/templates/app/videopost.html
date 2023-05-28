@@ -1,0 +1,19 @@
+{% extends "app/layout.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="card">
+    <h1>{{ title }}</h1>
+    <hr />
+    <div>
+        <h2>Видео-ролик 1</h2>
+        <VIDEO src="{% static 'app/media/видео1.mp4' %}" controls="controls" width="400" height="300" poster="{% static 'app/media/poster.jpg' %}"></VIDEO>
+    </div>
+    <div>
+        <h2>Видео-ролик 2</h2>
+        <VIDEO src="{% static 'app/media/видео2.mp4' %}" controls="controls" width="400" height="300" poster="{% static 'app/media/poster.jpg' %}"></VIDEO>
+    </div>
+</div>
+
+    {% endblock %}

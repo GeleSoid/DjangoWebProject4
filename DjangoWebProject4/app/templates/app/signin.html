@@ -1,0 +1,32 @@
+{% extends "app/layout.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="card">
+    <h2 style="margin-top: 40px;">Регистрация пользователя</h2>
+    <form class="form2" method="POST">
+        {% csrf_token %}
+
+        <div>
+
+            {{ regform.as_p}}
+
+            <button type="submit" class="save btn btn-three" style="margin:0;left:65px;width:170px"> Зарегистрировать </button>
+
+        </div>
+
+    </form>
+</div>
+
+    {% endblock content%}
+
+
+
+    {% block scripts %}
+
+    {% load static %}
+<script src="{% static 'app/scripts/jquery.validate.min.js' %}"></script>
+
+    {% endblock %}
